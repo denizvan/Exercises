@@ -18,21 +18,30 @@ public class Nr {
 
         // We want to test to see if a number is within the bounds of 1-100
         // TODO: add check here
+        if (nr >= 1 && nr <= 100) {
+            System.out.println("nr:" + "between 1 and 100");
+        }
 
 
         // We want to test to see if n is not within the bounds of 1-100
         // TODO: add check here
+        else {
+            System.out.println("nr:" + "is outside of range.");
+        }
 
-
-//        // TODO: what is wrong in the statement below
-//        if (0 <= nr <= 10) {
-//            System.out.println(nr + " is between 0 and 10.");
-//        }
 
         // TODO: what is wrong in the statement below
-        if (nr > 2 || nr < -2 && nr != 4) {
+        if (0 <= nr && nr <= 10) {
+            System.out.println(nr + " is between 0 and 10.");
+        // in this case syntax can be not correct.
+        }
+
+        // TODO: what is wrong in the statement below
+        if ((nr > 2 || nr < -2) && nr != 4) {
             System.out.println("Absolute value of " + nr + " is greater than 2 and " + nr + " is not equal to 4.");
         }
 
     }
 }
+
+

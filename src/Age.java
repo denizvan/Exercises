@@ -15,5 +15,11 @@ public class Age {
         System.out.println("age: " + age);
 
         // TODO: add check here
+        if (age < 0 || age > 120) {
+            System.out.println("invalid");
+
+
+        }
+
     }
 }
